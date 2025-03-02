@@ -1,0 +1,20 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.4",
+  "body": [
+      {
+          "type": "TextBlock",
+          "text": "Here is your response: Lorem ipsum dolor sit amet...",
+          "wrap": true
+      },
+      {
+        "type": "Image",
+        "url": "https://cdn-icons-png.flaticon.com/512/2462/2462719.png",
+        "size": "Medium",
+        "altText": "Sample Image",
+        "height": "50px",
+        "width": "50px"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}

@@ -1,0 +1,34 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.4",
+  "body": [
+      {
+          "type": "TextBlock",
+          "text": "Here is an image and a link:",
+          "wrap": true
+      },
+      {
+          "type": "Image",
+          "url": "https://via.placeholder.com/300",
+          "size": "Medium"
+      },
+      {
+          "type": "TextBlock",
+          "text": "[Click here for more details](https://example.com)",
+          "wrap": true
+      }
+  ],
+  "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Option 1",
+            "data": { "action": "option_1", "value": "User chose option 1" }
+        },
+        {
+            "type": "Action.Submit",
+            "title": "Option 2",
+            "data": { "action": "option_2", "value": "User chose option 2" }
+        }
+    ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}
