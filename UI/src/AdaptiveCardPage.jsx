@@ -5,7 +5,7 @@ const AdaptiveCardPage = () => {
     const [cardData, setCardData] = useState(null);
 
     useEffect(() => {
-        fetch("http://localhost:3000/adaptive-card", { method: "POST" }) // Adjust API URL if needed
+        fetch("http://localhost:3000/adaptive-card", { method: "POST" })
             .then((response) => response.json())
             .then((data) => setCardData(data))
             .catch((error) => console.error("Error fetching card:", error));

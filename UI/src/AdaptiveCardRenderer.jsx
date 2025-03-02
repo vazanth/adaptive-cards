@@ -8,10 +8,9 @@ const AdaptiveCardRenderer = ({ cardJson, onSubmit }) => {
         if (cardJson) {
             const adaptiveCard = new AdaptiveCards.AdaptiveCard();
 
-            // 🔥 This function runs when the user clicks a button inside the Adaptive Card
             adaptiveCard.onExecuteAction = (action) => {
                 if (action instanceof AdaptiveCards.SubmitAction) {
-                    onSubmit(action.data);  // This sends the button data to the parent component
+                    onSubmit(action.data); 
                 }
             };
 
